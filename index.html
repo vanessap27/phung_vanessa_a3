@@ -12,7 +12,7 @@
     <style>
       body {
         font-family: "montserrat", serif;
-        font-weight: 400px;
+        font-weight: 500;
         font-style: normal;
         text-align: center;
         align-items: center;
@@ -33,9 +33,9 @@
       }
 
       nav ul {
-        color: FEFAE1;
         font-family: "montserrat";
         font-size: 24px;
+
 
       }
 
@@ -47,10 +47,15 @@
 
       nav a {
         text-decoration: none;
+                color: 41232F;
+        font-weight: 500;
+
+
       }
 
-      nav a:hover {
+      nav a.active { /* active method found in w3schools */
         color: BD6384;
+        font-weight: 700;
       }
 
       footer {
@@ -95,7 +100,7 @@
 
     <nav>
       <ul>
-        <li><a class="m-semibold" href="index.html">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="sweet.html">Sweet</a></li>
         <li><a href="savory.html">Savory</a></li>
