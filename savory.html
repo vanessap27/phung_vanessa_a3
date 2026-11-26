@@ -11,19 +11,19 @@
 
     <style>
       body {
-        font-family: "montserrant", serif;
-        font-weight: 400;
+        font-family: "montserrat", serif;
+        font-weight: 500;
         font-style: normal;
         text-align: center;
         align-items: center;
-        background-color: ivory;
-      }
+        background-color: FEFAE1;
 
-      .accent {
-        font-family: "dynalight", sans-serif; 
-        font-weight: 600;
-        font-size: 80px;
+      }
+      p  {
+        font-family: "montserrat", serif;
+        font-size: 24px;
         color: FEFAE1;
+        text-align: center;
       }
 
       h1 {
@@ -33,10 +33,9 @@
       }
 
       nav ul {
-        font-weight: 700;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        font-family: "montserrat";
+        font-size: 24px;
+
 
       }
 
@@ -48,10 +47,15 @@
 
       nav a {
         text-decoration: none;
+                color: 41232F;
+        font-weight: 500;
+
+
       }
 
-      nav a:hover {
-        color: gray;
+      nav a.active { /* active method found in w3schools */
+        color: BD6384;
+        font-weight: 700;
       }
 
       footer {
@@ -62,9 +66,12 @@
         width: 100%;
 
       }
+
       img {
         max-width: 1400px;
         height: auto;
+        margin-right: 20px;
+        text-align: center;
       }
 
       .container {
@@ -72,35 +79,45 @@
         grid-template-columns: 100%;
         gap: 2%;
         margin: 2%;
+        text-align: center;
       }
 
+      .grid-item {
+        grid-template-columns: 50% 50%;
+        padding-bottom: 200px;
+      }
+
+      .accent {
+        font-family: "dynalight", sans-serif;
+        font-weight: 600;
+        font-size: 100px;
+        color: FEFAE1;
+      }
     </style>
   </head>
   <body>
 
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Cafes</a></li>
-        <li><a href="#">Restaurants</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sweet.html">Sweet</a></li>
+        <li><a class="active" href="savory.html">Savory</a></li>
       </ul>
     </nav>
 
     <div class="container">
-      <div class="grid-item">
-        <img src="hero.png" alt="title Vanessa's Favorites 2026, background of open envelope with paper sticking out">
-        <img src="divider.png" alt="thin divder with repeated text">
-      </div>
-      <div class="grid-item">
-        <h1>Food Reviews</h1>
-      </div>
+      
     </div>
     <footer>
       <h1 class="accent">
         Vanessa Phung
       </h1>
       <p>Let's Connect!</p>
+        <img src="insta.png" alt="instagram logo">
+        <img src="linkedin.png" alt="Linkedin logo">
+        <img src="mail.png" alt="mail icon">
+        
     </footer>
 
   </body>
